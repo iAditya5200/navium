@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200">
+  <!-- Outer Circle -->
+  <circle cx="130" cy="100" r="90" stroke="white" stroke-width="8" fill="none"/>
+
+  <!-- Letter N (centered vertically & horizontally) -->
+  <text x="130" y="100" text-anchor="middle" dominant-baseline="middle"
+        font-size="90" fill="white" font-weight="bold" font-family="Arial, sans-serif">
+    N
+  </text>
+
+  <!-- Left side lines -->
+  <line x1="30" y1="50" x2="85" y2="50" stroke="white" stroke-width="6"/>   <!-- top short -->
+  <line x1="0"  y1="100" x2="85" y2="100" stroke="white" stroke-width="6"/> <!-- medium -->
+  <line x1="30" y1="150" x2="85" y2="150" stroke="white" stroke-width="6"/> <!-- bottom short -->
+
+  <!-- Right side lines -->
+  <line x1="175" y1="50" x2="230" y2="50" stroke="white" stroke-width="6"/> <!-- top short -->
+  <line x1="175" y1="100" x2="260" y2="100" stroke="white" stroke-width="6"/> <!-- medium -->
+  <line x1="175" y1="150" x2="230" y2="150" stroke="white" stroke-width="6"/> <!-- bottom short -->
+</svg>
