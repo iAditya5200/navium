@@ -3,7 +3,7 @@ import Client from './Client'
 import { motion } from 'motion/react'
 import ship1 from '/src/assets/ship1.mp4'
 import ship2 from '/src/assets/ship2.mp4'
-import ship3 from '/src/assets/ship3.mp4'
+import ship3 from '/src/assets/Ship3.mp4'
 import ship4 from '/src/assets/ship4.mp4'
 
 function Clients() {
