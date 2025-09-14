@@ -5,7 +5,7 @@ function Marquee({ value, dir }) {
 
 
     return (
-        <div className=' w-full h-fit-content flex '>
+        <div className=' mt-5 w-full h-fit-content flex '>
             <motion.div className='flex bg-sky-950 text-zinc-100 leading-4 mt-2 '
                 initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}

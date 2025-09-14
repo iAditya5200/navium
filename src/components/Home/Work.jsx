@@ -26,17 +26,12 @@ function Work() {
         showImage([])
         break
       case 2:
-        showImage([0])
+        showImage([0 ,2])
         break
-      case 5:
-        showImage([0, 1])
+      case 3:
+        showImage([0, 1 ,2,3])
         break
-      case 7:
-        showImage([0, 1, 2])
-        break
-      case 9:
-        showImage([0, 1, 2, 3])
-        break
+      
 
     }
   })
@@ -53,7 +48,7 @@ function Work() {
             })}
           <div className='rounded overflow-hidden z-0 h-full w-100 absolute -translate-x-[10%] -translate-y-[0%]'>
             <video className='h-full w-full object-cover ' autoPlay loop muted
-              src="src/assets/mscVid.mp4" type="video/mp4">
+              src="src/assets/beach.mp4 " type="video/mp4">
             </video>
           </div>
        <h1 className="relative z-10 text-9xl text-center">

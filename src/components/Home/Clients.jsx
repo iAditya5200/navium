@@ -32,14 +32,14 @@ function Clients() {
                     <motion.div
                        transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}  initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/mscVid.mp4" type="video/mp4">
+                            src="src/assets/ship3.mp4" type="video/mp4">
                         </video>
 
                     </motion.div>
                     <motion.div
                      transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}   initial={{ y: -shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/maersk.mp4" type="video/mp4">
+                            src="src/assets/Maersk2.mp4" type="video/mp4">
                         </video>
                     </motion.div>
                     <motion.div
@@ -51,7 +51,7 @@ function Clients() {
                     <motion.div
                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/kline.mp4" type="video/mp4">
+                            src="src/assets/ship1.mp4" type="video/mp4">
                         </video>
                     </motion.div>
 

@@ -4,7 +4,7 @@ import Work from '/src/components/Home/Work'
 import Stripes from '/src/components/Home/Stripes'
 import Clients from '/src/components/Home/Clients'
 
-import Footer from '/src/components/Home/Footer'
+import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
 import DetailsCard from '../components/Home/DetailsCard'
@@ -17,11 +17,13 @@ function Home() {
       <Work />
       <DetailsCard />
       <Stripes />
-      <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-100'>
+      <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-100 hover:bg-sky-950 rounded-full'>
        What we do
       </div>
       <Clients />
-     <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-100 hover:bg-sky-950 rounded-full'>
+
+      
+     <div className='mx-auto mt-20 w-100 mt-10 font-bold text-3xl text-center text-zinc-100 '>
       Our Clients
       </div>
       <Marquees />
