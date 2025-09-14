@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion, useScroll } from "motion/react"
+import beach from '/src/assets/beach.mp4'
 
 function Work() {
   const [images, setImages] = useState([{ url: "https://images.unsplash.com/photo-1583857671904-a716bf4ee5d8?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "20%", left: "-56%", isActive: false },
@@ -48,7 +49,7 @@ function Work() {
             })}
           <div className='rounded overflow-hidden z-0 h-full w-100 absolute -translate-x-[10%] -translate-y-[0%]'>
             <video className='h-full w-full object-cover ' autoPlay loop muted
-              src="src/assets/beach.mp4 " type="video/mp4">
+              src= {beach} type="video/mp4">
             </video>
           </div>
        <h1 className="relative z-10 text-9xl text-center">

@@ -1,13 +1,14 @@
 import React from 'react'
 import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
+import logo from '/src/assets/newLogo.png'
 
 function Navbar() {
     return (
         <div className='py-2 max-w-190 justify-between flex items-start h-12 mx-auto   '>
             <div className='flex  items-center '>
                 <div className='flex'>
-                    <img className='w-8 inline ' src="/src/assets/newLogo.png" alt="" />
+                    <img className='w-8 inline ' src={logo} alt="" />
                     <h1 className='leading-none mr-8 font-bold text-xl text-red-600'>Navium</h1>
                 </div>
                 <div className='text-xs flex items-end gap-7'>

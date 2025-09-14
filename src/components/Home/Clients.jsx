@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import Client from './Client'
 import { motion } from 'motion/react'
+import ship1 from '/src/assets/ship1.mp4'
+import ship2 from '/src/assets/ship2.mp4'
+import ship3 from '/src/assets/ship3.mp4'
+import ship4 from '/src/assets/ship4.mp4'
 
 function Clients() {
 
@@ -32,26 +36,26 @@ function Clients() {
                     <motion.div
                        transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}  initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/ship3.mp4" type="video/mp4">
+                            src={ship1} type="video/mp4">
                         </video>
 
                     </motion.div>
                     <motion.div
                      transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}   initial={{ y: -shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/Maersk2.mp4" type="video/mp4">
+                            src={ship2} type="video/mp4">
                         </video>
                     </motion.div>
                     <motion.div
                        transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/cosco.mp4" type="video/mp4">
+                            src={ship3} type="video/mp4">
                         </video>
                     </motion.div>
                     <motion.div
                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
                         <video className='h-full object-cover' autoPlay loop muted
-                            src="src/assets/ship1.mp4" type="video/mp4">
+                            src={ship4} type="video/mp4">
                         </video>
                     </motion.div>
 
