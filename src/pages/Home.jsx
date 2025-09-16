@@ -12,18 +12,18 @@ import Contact from '../components/Home/Contact'
 
 function Home() {
   return (
-   <div className='min-h-screen w-full font-[Parkinsans] bg-slate-950'>
+   <div className='min-h-screen  w-full font-[Parkinsans] bg-[#F2F0EA]  '>
       <Navbar />
       <Work />
       <DetailsCard />
       <Stripes />
-      <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-100 hover:bg-sky-950 rounded-full'>
+      <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full'>
        What we do
       </div>
       <Clients />
 
       
-     <div className='mx-auto mt-20 w-100 mt-10 font-bold text-3xl text-center text-zinc-100 '>
+     <div className='mx-auto mt-20 w-100 mt-10 font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full '>
       Our Clients
       </div>
       <Marquees />

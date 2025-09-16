@@ -38,8 +38,8 @@ function Work() {
   })
 
   return (
-    <div className=' flex w-full mt-10 justify-center '>
-      <div className=' relative  max-w-180 text-[25vw] font-medium font-[Cookie] text-zinc-100 leading-none'>
+    <div className=' flex w-[90vw] mx-auto rounded-2xl h-[95vh] mt-10 justify-center  bg-sky-950 '>
+      <div className=' relative  max-w-180 text-[25vw] font-medium font-[Cookie] text-zinc-100 flex items-center leading-none'>
        
           {
             images.map((item, index) => {
@@ -47,7 +47,7 @@ function Work() {
                 return <img key={index} className=" rounded w-[15vw] h-[15vw] absolute -translate-x-[50%] -translate-y-[50%]" style={{ top: item.top, left: item.left }} src={item.url} alt="img" />
               }
             })}
-          <div className='rounded overflow-hidden z-0 h-full w-100 absolute -translate-x-[10%] -translate-y-[0%]'>
+          <div className='rounded-2xl overflow-hidden z-0 h-[70%] w-100 absolute -translate-x-[10%] -translate-y-[0%]'>
             <video className='h-full w-full object-cover ' autoPlay loop muted
               src= {beach} type="video/mp4">
             </video>
