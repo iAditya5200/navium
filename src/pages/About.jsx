@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Common/Navbar'
+import Footer from '../components/Common/Footer'
 import Clients from '/src/components/Home/Clients'
 import DetailsCard from '../components/Home/DetailsCard'
 
@@ -12,6 +13,7 @@ function About() {
                 What we do
             </div>
             <Clients/>
+             <Footer/>
             
         </div>
     )
