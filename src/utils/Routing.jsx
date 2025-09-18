@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import Library from '../pages/Library'
+import About from '../pages/About'
 
 function Routing() {
   return (
@@ -9,6 +10,7 @@ function Routing() {
         <Routes>
         <Route path='/' element= {<Home/>} />
         <Route path='/library' element= {<Library/>} />
+        <Route path='/aboutus' element= {<About/>} />
         </Routes></div>
   )
 }

@@ -15,12 +15,8 @@ function Home() {
    <div className='min-h-screen  w-full font-[Parkinsans] bg-[#F2F0EA]  '>
       <Navbar />
       <Work />
-      <DetailsCard />
+   
       <Stripes />
-      <div className='mx-auto w-100 mt-10 font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full'>
-       What we do
-      </div>
-      <Clients />
 
       
      <div className='mx-auto mt-20 w-100 mt-10 font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full '>

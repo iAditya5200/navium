@@ -4,7 +4,7 @@ function DetailsCard() {
   return (
     <div className='h-fit-content w-[100%]  mt-20  overflow-hidden '>
       <div className='h-[90%] w-[80%] mx-auto '>
-        <div className='mx-auto my-10 w-100 mt-10 font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full'>
+        <div className='mx-auto w-100  font-bold text-3xl text-center text-zinc-800 hover:bg-[#A8D5E3] hover:text-pink-500 rounded-full'>
           About Navium
         </div>
         <p className='text-zinc-800 mt-5 text-center hover:text-shadow-md hover:text-shadow-blue-100  '>

@@ -3,7 +3,7 @@ import Navbar from '../components/Common/Navbar'
 
 const Library = () => {
   return (
-    <div className='min-h-screen w-full font-[Parkinsans] bg-slate-950' >
+    <div className='min-h-screen w-full font-[Parkinsans]  bg-[#F2F0EA]' >
       <Navbar/>
     </div>
   )

@@ -3,10 +3,10 @@ import { motion, useScroll } from "motion/react"
 import beach from '/src/assets/beach.mp4'
 
 function Work() {
-  const [images, setImages] = useState([{ url: "https://images.unsplash.com/photo-1583857671904-a716bf4ee5d8?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "20%", left: "-56%", isActive: false },
-  { url: "https://images.unsplash.com/photo-1637708546749-daa14b601ae0?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "51%", left: "-60%", isActive: false },
-  { url: "https://images.unsplash.com/photo-1631505393083-34c0893e1efd?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "20%", left: "156%", isActive: false },
-  { url: "https://images.unsplash.com/photo-1643572549193-46741e42169b?q=80&w=567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "51%", left: "160%", isActive: false }
+  const [images, setImages] = useState([{ url: "https://images.unsplash.com/photo-1583857671904-a716bf4ee5d8?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "20%", left: "15%", isActive: false },
+  { url: "https://images.unsplash.com/photo-1637708546749-daa14b601ae0?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "51%", left: "5%", isActive: false },
+  { url: "https://images.unsplash.com/photo-1631505393083-34c0893e1efd?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "20%", left: "85%", isActive: false },
+  { url: "https://images.unsplash.com/photo-1643572549193-46741e42169b?q=80&w=567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", top: "51%", left: "95%", isActive: false }
   ])
   const { scrollYProgress } = useScroll();
 
@@ -27,35 +27,40 @@ function Work() {
         showImage([])
         break
       case 2:
-        showImage([0 ,2])
+        showImage([0, 2])
         break
       case 3:
-        showImage([0, 1 ,2,3])
+        showImage([0, 1, 2, 3])
         break
-      
+
 
     }
   })
 
   return (
-    <div className=' flex w-[90vw] mx-auto rounded-2xl h-[95vh] mt-10 justify-center  bg-sky-950 '>
-      <div className=' relative  max-w-180 text-[25vw] font-medium font-[Cookie] text-zinc-100 flex items-center leading-none'>
-       
-          {
-            images.map((item, index) => {
-              if (item.isActive) {
-                return <img key={index} className=" rounded w-[15vw] h-[15vw] absolute -translate-x-[50%] -translate-y-[50%]" style={{ top: item.top, left: item.left }} src={item.url} alt="img" />
-              }
-            })}
-          <div className='rounded-2xl overflow-hidden z-0 h-[70%] w-100 absolute -translate-x-[10%] -translate-y-[0%]'>
-            <video className='h-full w-full object-cover ' autoPlay loop muted
-              src= {beach} type="video/mp4">
-            </video>
-          </div>
-       <h1 className="relative z-10 text-9xl text-center">
-      <span className="text-6xl">Beyond </span>
-      <br /> Horizon
-    </h1>
+    <div className=' flex w-[90vw] mx-auto rounded-2xl h-[95vh] mt-10 justify-center align-center bg-sky-950 '>
+      <div className='  relative w-[100%]  bg-sky-750 font-medium font-[Cookie]  justify-center  text-zinc-100 flex items-center  leading-none'>
+
+        { 
+          images.map((item, index) => {
+            if (item.isActive) {
+              return <img key={index} className="z-25 rounded w-[15vw] h-[15vw] absolute -translate-x-[50%] -translate-y-[50%]" style={{ top: item.top, left: item.left }} src={item.url} alt="img" />
+            }
+          })
+        }
+
+
+        <div className='rounded-2xl overflow-hidden translate-x-0 translate-y-0 z-0  h-[100%]  w-[100%]   absolute  '>
+          <video className='h-full w-full object-cover ' autoPlay loop muted
+            src={beach} type="video/mp4">
+          </video>
+        </div>
+
+
+        <h1 className=" z-10 absolute left-[23%] text-[20vw] text-center">
+          <span className="text-6xl">Beyond </span>
+          <br /> Horizon
+        </h1>
 
       </div>
     </div>
