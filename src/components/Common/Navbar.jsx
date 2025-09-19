@@ -5,19 +5,20 @@ import logo from '/src/assets/logoF.png'
 
 function Navbar() {
     return (
-        <div className='p-2 max-w-[80vw] justify-between flex items-center h-12 mx-auto bg-zinc-150  rounded-b-xl'>
+        <div className='p-2 max-w-[95vw] justify-between flex items-center h-12 mx-auto bg-zinc-150  rounded-b-xl'>
+            <div className='flex'>
+                <img className=' h-5 inline mr-1 ' src={logo} alt="" />
+                <h1 className='leading-none mr-8 font-bold text-xl text-red-600'>Navium <p className='text-[0.8vw] italic font-medium '>Beyond Horizon</p></h1>
+            </div>
             <div className='flex  items-center '>
-                <div className='flex'>
-                    <img className=' h-5 inline mr-1 ' src={logo} alt="" />
-                    <h1 className='leading-none mr-8 font-bold text-xl text-red-600'>Navium</h1>
-                </div>
+
                 <div className='text-xs flex  items-end gap-7'>
                     {["Home", "Insights", "About us", "Library"].map((item) => (
                         <div key={item}>
                             <NavLink
                                 to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "")}`}
-                                className={(e)=>{ 
-                                return    e.isActive ? "flex items-center text-red-500 font-semibold" : "flex items-center text-zinc-800"
+                                className={(e) => {
+                                    return e.isActive ? "flex items-center text-red-500 font-semibold" : "flex items-center text-zinc-800"
                                 }}
                             >
                                 {({ isActive }) => (
@@ -36,11 +37,11 @@ function Navbar() {
                             </NavLink>
                         </div>
                     ))}
-
+                    <Button />
                 </div>
 
             </div>
-            <Button />
+
         </div >
     )
 }
