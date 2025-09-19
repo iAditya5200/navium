@@ -50,7 +50,7 @@ function Contact() {
                 <div className='text-5xl  font-bold text-blue-950 text-center'> c</div>
                 <div className='text-5xl  font-bold text-blue-950 text-center'> t</div>
                 <div className='text-5xl  font-bold text-blue-950 text-center'> s</div> </div>
-            <div className='w-[60%]  h-[100%]  bg-[#A8D5E3] rounded-xl overflow-hidden p-2 '> <h3 className=' font-bold text-xl text-zinc-800 ml-10 mb-3'>Have any enquiry ?</h3><EnquiryForm /></div>
+            <div className='w-[60%]  h-[100%] rounded-xl overflow-hidden p-2 '> <h3 className=' font-bold text-xl text-zinc-800 ml-10 mb-3'>Have any enquiry ?</h3><EnquiryForm /></div>
         </div>
     )
 }
