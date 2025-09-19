@@ -15,8 +15,8 @@ function Contact() {
 
     })
     return (
-        <div className=' mt-20 w-[100%] h-[100vh]  overflow-hidden gap-10 flex justify-between p-5'>
-            <div className={`w-[30%] h-[100%] bg-[#A8D5E3] z-1 rounded-xl p-5`}>
+        <div  className=' mt-20 w-[100%] h-[100vh]  overflow-hidden gap-10 flex justify-between p-5'>
+            <motion.div animate className={`w-[30%] h-[100%] bg-[#A8D5E3] z-1 rounded-xl p-5`}>
                 <div className='items-center gap-3 text-zinc-800 flex '>  <FaHome />
                     <h3 className='text-zinc-800 font-semibold '>Address : </h3>
                 </div>
@@ -40,7 +40,7 @@ function Contact() {
                 </div>
 
 
-            </div>
+            </ motion.div>
 
             <div className='w-15 h-full '><div className='text-5xl  font-bold text-blue-950 text-center'>C</div>
                 <div className='text-5xl  font-bold text-blue-950 text-center'> o</div>

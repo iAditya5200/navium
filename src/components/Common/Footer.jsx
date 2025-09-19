@@ -9,13 +9,13 @@ function Footer() {
             <div className='pt-5 flex gap-15 h-full items-baseline'>
                 <div className='flex-col'>
                     <h3 className='text-red-500'>Social</h3>
-                    {[, 'linkedin', 'facebook'].map((item, index) => {
+                    {['linkedin'].map((item, index) => {
                         return <a className='block text-[1vw] text-sky-900 hover:text-red-500' href="">{item}</a>
                     })}
                 </div>
                 <div className='flex-col'>
                     <h3 className='text-red-500'>Sitemap</h3>
-                    {['career', 'e-library', 'about-us', 'contact'].map((item, index) => {
+                    {['About-us', 'e-library', 'services'   , 'contact'].map((item, index) => {
                         return <a className='block text-[1vw] text-sky-900 hover:text-red-500' href="">{item}</a>
                     })}
                 </div>

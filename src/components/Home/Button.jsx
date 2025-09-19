@@ -3,7 +3,7 @@ import { MdSubdirectoryArrowRight } from 'react-icons/md'
 
 function Button() {
   return (
-    <div className=' min-w-22 h-5 px-2 py-1 flex items-center text-[9px] text-zinc-100 bg-red-600 rounded-full font-medium justify-between'> <span>Contact-US </span> 
+    <div className=' min-w-22 h-5 px-2 py-1 flex items-center text-[0.8vw] text-zinc-100 bg-red-600 rounded-full font-medium justify-between'> <span>Contact-US </span> 
     <MdSubdirectoryArrowRight /></div>
   )
 }
