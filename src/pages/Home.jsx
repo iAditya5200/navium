@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from '/src/components/Common/Navbar'
 import Work from '/src/components/Home/Work'
 import Stripes from '/src/components/Home/Stripes'
-import Clients from '/src/components/Home/Clients'
+
 
 import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
-import DetailsCard from '../components/Home/DetailsCard'
+
 import Contact from '../components/Home/Contact'
 
 function Home() {

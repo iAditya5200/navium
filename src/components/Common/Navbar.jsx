@@ -79,7 +79,7 @@
 // export default Navbar
 
 import React from 'react'
-import Button from '../Home/Button'
+import Button from './Button'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '/src/assets/logoF.png'
 

@@ -57,7 +57,7 @@ function Work() {
         </div>
 
         <motion.h1 initial={{opacity:0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 2 }} className=" z-11 absolute left-[23%] text-[20vw] text-center">
+          transition={{ delay: 3, duration: 2 }} className=" z-11 absolute font-[Calibiri] left-[18%] text-[20vw] text-center">
           <span>Navium </span>
 
         </motion.h1>
