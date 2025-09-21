@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className=' border-y-[1px] border-blue-950 w-full mt-20 rounded px-10 flex items-center gap-10 '>
+        <div className=' border-t-[1px] border-blue-950 w-full mt-20 rounded px-10 flex items-center gap-10 '>
             <div className=''>
                 <h1 className='border-r-[1px]  border-blue-950  pr-10 font-bold text-[6vw] text-red-500 mr-15 tracking-tighter'>Navium</h1>
             </div>
@@ -10,7 +10,7 @@ function Footer() {
                 <div className='flex-col'>
                     <h3 className='text-red-500'>Social</h3>
                     {['linkedin'].map((item, index) => {
-                        return <a className='block text-[1vw] text-sky-900 hover:text-red-500' href="">{item}</a>
+                        return <a className='block text-[1vw] text-sky-900 hover:text-red-500' href={item}>{item}</a>
                     })}
                 </div>
                 <div className='flex-col'>

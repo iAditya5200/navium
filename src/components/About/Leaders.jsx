@@ -15,7 +15,7 @@ function Leaders() {
             })}
             </div>
             <div className=''>
-                <Button content={"Know more"} width={"10vw"} link={"/"} />
+                <Button content={"Know more"} width={"10vw"} link={"/leadership"} />
             </div>
         </div>
     )

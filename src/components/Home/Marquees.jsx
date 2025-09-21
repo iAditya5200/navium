@@ -2,24 +2,23 @@ import React from 'react'
 import Marquee from './Marquee'
 
 function Marquees() {
-    const data = [["MSC",
-        "Kline ",
-        "Maersk ",
-        " Cosco ",
-        "Company ",
-        "company ",
-        " shipper ",
-        "example ",
-        "pirates"
-    ],["MSC",
-        "Kline ",
-        "Maersk ",
-        " Cosco ",
-        "Company ",
-        "company ",
-        " shipper ",
-        "example ",
-        "pirates"
+    const data = [[
+        "NYK",
+        "Berge Bulk ",
+        "3digit ",
+        "Orion ",
+        "Weltech ",
+        "SolverMind ",
+        "D2M",
+        "Edot"
+    ],[ "NYK",
+        "Berge Bulk ",
+        "3digit ",
+        "Orion ",
+        "Weltech ",
+        "SolverMind ",
+        "D2M",
+        "Edot"
     ]]
     console.log(data)
     return (

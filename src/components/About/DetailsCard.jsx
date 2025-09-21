@@ -21,7 +21,7 @@ function DetailsCard() {
         </motion.div>
       
       </div>
-       <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2}} className='text-zinc-800 mt-3 text-center hover:text-shadow-md hover:text-shadow-blue-100  '>
+       <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay :2 ,duration:2}} className='text-zinc-800 mt-3 text-center hover:text-shadow-md hover:text-shadow-blue-100  '>
        Our highly skilled consultants conduct thorough audits of ships, systems, and Owners/Operators offices, offering independent assessments aligned with industry standards.  With extensive experience, our consultants perform fleet-wide navigation audits for Oil Tankers, Gas Carriers, large container ships, and bulk carrier Owners. This allows us to provide valuable feedback to improve performance. Clients have praised the effectiveness of our audits, highlighting our meticulous approach and attention to detail.
        </motion.p>
 
