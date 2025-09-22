@@ -182,20 +182,13 @@ function Navbar() {
                                                 Blogs
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link
-                                                to="/services/design"
-                                                className="block px-4 py-2 hover:bg-gray-100"
-                                            >
-                                                Service 3
-                                            </Link>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             )}
                         </div>
                     ))}
-                    <Button />
+                    <Button content = "Contact-us " width="100%"   />
                 </div>
             </div>
         </div>
