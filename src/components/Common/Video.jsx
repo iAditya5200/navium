@@ -1,5 +1,4 @@
 import React from 'react'
-import vdo from '/src/assets/beach.mp4'
 import { motion } from 'motion/react'
 
 

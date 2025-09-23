@@ -8,15 +8,15 @@ function Leaders() {
     ]
     return (
         <div className=" w-[100%] flex flex-col items-center justify-center ">
-            <div className='flex  mt-10 flex-wrap gap-6 justify-center'>
+            <div className='flex  mt-10 flex-wrap gap-[15vw] justify-center'>
             {leader.map((item) => {
                 return <Leader name={item.name} post={item.post} designation={item.des} url={item.url} />
 
             })}
             </div>
-            <div className=''>
+          
                 <Button content={"Know more"} width={"10vw"} link={"/leadership"} />
-            </div>
+          
         </div>
     )
 }
