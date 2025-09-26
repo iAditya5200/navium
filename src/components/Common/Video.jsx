@@ -1,19 +1,28 @@
-import React from 'react'
-import { motion } from 'motion/react'
+import React from "react";
+import { motion } from "motion/react";
 
+const Video = ({ title, url, className = "" }) => {
+  return (
+    <div
+      className={` overflow-hidden rounded transition-transform duration-300 ${className}`}
+    >
+      <div className="relative w-full h-full">
+        {/* Title Overlay */}
+        {title && (
+          <h3 className="absolute top-2 left-2 text-xs bg-zinc-700/80 text-white p-1 rounded font-semibold z-10">
+            {title}
+          </h3>
+        )}
 
-const Video = ({ title, url }) => {
-    return (
-      
-            <div className='h-[50vh] overflow-hidden hover:scale-[1.05] rounded  w-[40%] '>
-                <div className=' relative h-[100%] w-[100%]  '>
-                    <h3 className=' mx-3 my-2 absolute text-xs bg-zinc-700 p-1 rounded font-semibold '>{title}</h3>
-                    <motion.video className='object-cover' controls src={url} ></motion.video>
-                </div>
+        {/* Video */}
+        <motion.video
+          className="w-full h-full object-cover"
+          controls
+          src={url}
+        />
+      </div>
+    </div>
+  );
+};
 
-            </div>
-    
-    )
-}
-
-export default Video
+export default Video;
