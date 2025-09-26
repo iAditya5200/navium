@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Common/Navbar'
 import Footer from '../components/Common/Footer'
-import Clients from '/src/components/About/Clients'
+
 import DetailsCard from '/src/components/About/DetailsCard'
 import img from '/src/assets/leadership.jpg'
 import HeadingImg from '../components/Common/HeadingImg'
@@ -16,10 +16,7 @@ function About() {
         <div className='min-h-screen w-full font-[Parkinsans]  bg-[#F2F0EA]' >
             <Navbar />
             <DetailsCard />
-            <div className='mx-auto w-100 mt-5 font-bold text-5xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
-                What we do
-            </div>
-            <Clients />
+           
             <div className='h-52 w-full  my-[12vw] flex items-center justify-center gap-[20vw]'>
                 <div className='w-[30%] h-full hover:bg-zinc-300 hover:scale-[1.05] p-3 rounded flex flex-col items-center'>
                     <GiCrystalGrowth className='text-7xl' />

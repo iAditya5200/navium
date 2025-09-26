@@ -22,17 +22,8 @@ function Marquees() {
         {name :"",url : D2m , w : "10vw"},
         {name :"",url : e , w : "10vw"} ,
          {name :"",url : z , w : "14vw"} 
-        ],
-          [{name :"NYK", url : nyk , w : "5vw" },
-        {name :"",url : bul , w : "12vw"},
-        {name :"3Digit",url : dig , w : "5vw"},
-        {name :"",url : or , w : "12vw"},
-        {name :"",url : wel , w : "14vw"},
-        {name :"",url : sol , w : "12vw"},
-        {name :"",url : D2m , w : "10vw"},
-        {name :"",url : e , w : "10vw"} ,
-         {name :"",url : z , w : "14vw"} 
         ]]
+      
     
     
     console.log(data)
@@ -42,7 +33,10 @@ function Marquees() {
                 console.log(elem)
               return  <Marquee value={elem} dir={index===0 ? "left" : "right"}/>
             })}
+
+            
         </div>
+
     )
 }
 
