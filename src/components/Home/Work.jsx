@@ -56,15 +56,12 @@ function Work() {
           </video>
         </div>
         <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 1 }} className=" z-11 absolute font-[Calibiri] top-0 left-[33%] text-[8vw] text-center">
-          <span>Welcome </span>
+          transition={{ delay: 3, duration: 1 }} className=" z-11 absolute font-[Calibiri] top-0 left-[28%] text-[8vw] text-center">
+          <span>Welcome To </span>
         </motion.h1>
-         <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }} className=" z-11 absolute font-[Calibiri] top-[20%] left-[48%] text-[5vw] text-center">
-          <span>to</span>
-        </motion.h1>
+       
         <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 5, duration: 2 }} className=" z-11 absolute font-[Calibiri] left-[25%] text-[15vw] text-center">
+          transition={{ delay: 5, duration: 2 }} className=" z-11 absolute font-[Calibiri] top-[60%] left-[25%] text-[15vw] text-center">
           <span>Navium </span>
         </motion.h1>
         <motion.h1 animate={{ opacity: 0 }}

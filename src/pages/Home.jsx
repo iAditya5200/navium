@@ -4,6 +4,7 @@ import Work from '/src/components/Home/Work'
 import Stripes from '/src/components/Home/Stripes'
 import Clients from '/src/components/About/Clients'
 import img from '/src/assets/ship.jpg'
+
 import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
@@ -12,11 +13,13 @@ import Contact from '../components/Home/Contact'
 
 function Home() {
   return (
-    <div className='min-h-screen  w-full font-[Parkinsans] bg-[#F2F0EA]  '>
+    <div className='min-h-screen  w-[100%] font-[Parkinsans] bg-[#F2F0EA]  '>
       <Navbar />
       <Work />
-
-      <div className='mx-auto w-[100%] mt-25 font-bold text-3xl text-center text-zinc-800   rounded-full'>
+      <div className='mx-auto w-[100%] mt-25 font-bold text-5xl text-center text-zinc-800   rounded-full'>
+        Navium
+      </div>
+      <div className='mx-auto w-[100%] mt-5 font-bold text-3xl text-center text-zinc-800   rounded-full'>
         Your Compass to Maritime Innovation.
       </div>
       <div className='flex gap-[5vw] p-[5vw]'>
@@ -28,34 +31,38 @@ function Home() {
           <br />
           With extensive experience, our consultants perform fleet-wide navigation audits for Oil Tankers, Gas Carriers, large container ships, and bulk carrier Owners. This allows us to provide valuable feedback to improve performance. Clients have praised the effectiveness of our audits, highlighting our meticulous approach and attention to detail.
         </p>
-        <img className='w-[40vw] h-[30vw] object-cover' src={img} alt="img" />
+        <img className='w-[40vw] h-[30vw] object-cover rounded' src={img} alt="img" />
       </div>
 
 
 
 
 
-      <div className='mx-auto w-100 mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+      <div className='mx-auto w-100 mt-25 tracking-widest font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Clients
       </div>
       <Marquees />
       <hr />
-      <div className='mx-auto w-100 mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+      <div className='mx-auto w-100 tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         What we do
       </div>
       < p className='text-center my-5'>Navium has been a prominent player in the industry since 2016, providing marine-related technical services to a global clientele. Whether you’re a Dry Fleet or Tanker Fleet operator, at Navium Marine, we tailor our solutions to your unique fleet needs. Our dedicated team of Subject Matter Experts is driven by the goal of optimizing your fleet’s performance.</p>
       <Clients />
 
-      <div className='mx-auto w-100 mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+      <div className='mx-auto w-100 tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Services
       </div>
 
       <Marquees />
       <hr />
-      <div className='mx-auto w-100 mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+      <div className='mx-auto tracking-widest w-100 mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Stats
       </div>
       <Stripes />
+
+      <div className='mx-auto w-[100%] text-left pl-[2vw] mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+        Contact-us
+      </div>
       <Contact />
       <Footer />
     </div>

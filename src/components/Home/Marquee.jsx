@@ -4,8 +4,8 @@ function Marquee({ value, dir }) {
 
 
     return (
-        <div className=' mt-5 w-full h-fit-content flex '>
-            <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4 mt-2 '
+        <div className=' mt-5 w-full bg-zinc-400 h-fit-content flex gap-[8vw]'>
+            <motion.div className='flex bg-zinc-400 text-zinc-900 gap-[8vw] leading-4 mt-2 '
                 initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
                 transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
@@ -20,7 +20,7 @@ function Marquee({ value, dir }) {
 
                 }
             </motion.div>
-            <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4 mt-2 '
+            <motion.div className='flex bg-zinc-400 gap-[8vw] text-zinc-900 leading-4 mt-2 '
                 initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
                 transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
