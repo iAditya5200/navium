@@ -32,68 +32,62 @@
 
 // export default Footer
 
+
 import React from 'react';
 
 function Footer() {
-    return (
-        <footer className="w-full border-t border-blue-950 mt-20 px-5 sm:px-10 py-10 bg-white text-sm sm:text-base">
-            <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+  return (
+    <footer className="w-full mt-20  border-t border-blue-950 px-6  py-8 flex flex-col md:justify-evenly md:flex-row items-start md:items-center gap-8 md:gap-10">
+      
+      {/* Logo */}
+      <div className="md:border-r md:pr-10 border-blue-950 mx-auto md:mx-0">
+        <h1 className="font-bold text-[8vw] md:text-[3vw] text-red-500 tracking-tighter">Navium</h1>
+      </div>
 
-                {/* Logo Section */}
-                <div className="w-full lg:w-1/4 text-center lg:text-left">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-red-500 tracking-tighter">
-                        Navium
-                    </h1>
-                </div>
+      {/* Links and description container */}
+      <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-full">
 
-                {/* Content Section */}
-                <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center sm:text-left">
-                    
-                    {/* Social Links */}
-                    <div>
-                        <h3 className="text-red-500 font-semibold mb-2">Social</h3>
-                        {['LinkedIn'].map((item, index) => (
-                            <a
-                                key={index}
-                                href="https://linkedin.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={`Visit our ${item}`}
-                                className="block text-sky-900 hover:text-red-500 transition-colors"
-                            >
-                                {item}
-                            </a>
-                        ))}
-                    </div>
+        {/* Social */}
+        <div className="flex flex-col mx-auto md:mx-0">
+          <h3 className="text-red-500 font-semibold mb-2">Social</h3>
+          {['linkedin'].map((item, index) => (
+            <a
+              key={index}
+              href="#"
+              className="text-sky-900  hover:text-red-500 text-sm md:text-[1vw]"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
 
-                    {/* Sitemap Links */}
-                    <div>
-                        <h3 className="text-red-500 font-semibold mb-2">Sitemap</h3>
-                        {['About Us', 'e-Library', 'Services', 'Contact'].map((item, index) => (
-                            <a
-                                key={index}
-                                href="#"
-                                className="block text-sky-900 hover:text-red-500 transition-colors"
-                            >
-                                {item}
-                            </a>
-                        ))}
-                    </div>
+        {/* Sitemap */}
+        <div className="flex flex-col mx-auto md:mx-0">
+          <h3 className="text-red-500 font-semibold mb-2">Sitemap</h3>
+          {['About-us', 'e-library', 'services', 'contact'].map((item, index) => (
+            <a
+              key={index}
+              href="#"
+              className="text-sky-900 hover:text-red-500 text-sm md:text-[1vw]"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
 
-                    {/* Company Info */}
-                    <div className="text-zinc-800">
-                        <p>
-                            Navium Maritime Shipping Services Pvt Ltd, established in 2020, specializes in
-                            providing top-notch technical services to global clients in the maritime industry.
-                        </p>
-                        <div className="mt-5 text-right font-semibold text-zinc-500 text-sm">
-                            Developed by Aditya
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+        {/* Company Description */}
+        <div className="md:w-3/4 text-zinc-800 text-sm md:text-[1vw] text-center md:text-left md:text-[1.5vw]">
+          <p>
+            Navium Maritime Shipping Services Pvt Ltd, established in 2020, specializes in
+            providing top-notch technical services to global clients in the maritime industry.
+          </p>
+          <div className="mt-4 w-full text-end font-bold text-zinc-500 text-xs md:text-sm">
+            Developed by Aditya
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
