@@ -10,8 +10,7 @@ function Clients() {
 
     const [shift, setShift] = useState()
     const shifter = (val) => {
-
-        setShift(val * 15)
+      setShift(val * 15)
     }
    
     const data = [{ name: "CDI INSPECTION", desc: "Mediterranean Shipping Company S.A., branded as MSC, is an international shipping line founded by Gianluigi Aponte in Italy in 1970.", logo: "/src/assets/msclogo.webp", bg: "bg-voilet-700" },
@@ -21,40 +20,40 @@ function Clients() {
 
     ]
     return (
-        <div className='mt-5 relative '>
+        <div className='mt-[6vw]  relative '>
             {data.map((elem, index) => {
 
                 return <Client val={elem} shifter={shifter} index={index} />
 
             })}
-            <div className='w-full h-full absolute top-0 pointer-events-none'>
+            <div className='w-full hidden md:block h-full absolute top-0 pointer-events-none '>
                 <motion.div
                     initial={{ y: shift + "vw", }}
                     animate={{ y: shift + "vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: .6 }}
-                    className={` h-[15vw] w-[18vw] overflow-hidden left-[40%] rounded   absolute `}>
+                    className={` h-[15vw] w-[28vw] overflow-hidden left-[30%] rounded   absolute `}>
                     <motion.div
-                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}  initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
-                        <video className='h-full object-cover' autoPlay loop muted
+                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}  initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-[100%] bg-red-100 -translate-y-${shift}`}>
+                        <video className='h-full w-full object-cover' autoPlay loop muted
                             src={ship1} type="video/mp4">
                         </video>
 
                     </motion.div>
                     <motion.div
-                     transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}   initial={{ y: -shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
-                        <video className='h-full object-cover' autoPlay loop muted
+                     transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}}   initial={{ y: -shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-[100%]  -translate-y-${shift}`}>
+                        <video className='h-full w-full object-cover' autoPlay loop muted
                             src={ship2} type="video/mp4">
                         </video>
                     </motion.div>
                     <motion.div
-                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
-                        <video className='h-full object-cover' autoPlay loop muted
+                       transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-[100%]  -translate-y-${shift}`}>
+                        <video className='h-full w-full object-cover' autoPlay loop muted
                             src={ship3} type="video/mp4">
                         </video>
                     </motion.div>
                     <motion.div
-                      transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-full  -translate-y-${shift}`}>
-                        <video className='h-full object-cover' autoPlay loop muted
+                      transition={{ease :[0.76, 0, 0.24, 1]  , duration : .6}} initial={{ y: - shift + "vw", }} animate={{ y: -shift + "vw" }} className={`h-[15vw] w-[100%]  -translate-y-${shift}`}>
+                        <video className='h-full w-full  object-cover' autoPlay loop muted
                             src={ship4} type="video/mp4">
                         </video>
                     </motion.div>

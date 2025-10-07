@@ -4,7 +4,7 @@ import Work from '/src/components/Home/Work'
 import Stripes from '/src/components/Home/Stripes'
 import Clients from '/src/components/About/Clients'
 import img from '/src/assets/ship.jpg'
-
+import Button from '/src/components/Common/Button'
 import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
@@ -16,13 +16,13 @@ function Home() {
     <div className='min-h-screen  w-[100%] font-[Parkinsans] bg-[#F2F0EA]  '>
       <Navbar />
       <Work />
-      <div className='mx-auto w-[100%] mt-25 font-bold text-5xl text-center text-zinc-800   rounded-full'>
+      {/* <div className='mx-auto w-[100%] mt-25 font-bold text-5xl text-center text-zinc-800   rounded-full'>
         Navium
       </div>
       <div className='mx-auto w-[100%] mt-5 font-bold text-3xl text-center text-zinc-800   rounded-full'>
         Your Compass to Maritime Innovation.
       </div>
-      <div className='flex gap-[5vw] p-[5vw]'>
+      <div className='flex gap-[5vw] px-[5vw] mt-[5vw]'>
 
         <p >
           Navium Maritime Shipping Services Pvt Ltd, established in 2020, specializes in providing top-notch technical services to global clients in the maritime industry.
@@ -30,12 +30,60 @@ function Home() {
           <br />
           <br />
           With extensive experience, our consultants perform fleet-wide navigation audits for Oil Tankers, Gas Carriers, large container ships, and bulk carrier Owners. This allows us to provide valuable feedback to improve performance. Clients have praised the effectiveness of our audits, highlighting our meticulous approach and attention to detail.
+          <br />
+          <br />
+          As part of our continued expansion, we established 9M Solutions Pte. Ltd. in 2023. Based in Singapore, this subsidiary focuses on advanced training, e-learning, and Competency Learning Management System (CLMS) services, empowering seafarers across diverse shipping companies.
+          With a commitment to excellence and innovation, Navium Maritime Shipping Services Pvt. Ltd. remains a trusted partner in driving operational success and professional growth in the maritime industry.
+
         </p>
         <img className='w-[40vw] h-[30vw] object-cover rounded' src={img} alt="img" />
       </div>
+      <div className=' ml-[5vw] mt-[1vw]'>
+        <Button content="know more" width="15vw" link="/aboutus" />
+      </div> */}
+
+      <div className="mx-auto w-full mt-16 px-4 sm:px-6 lg:px-12">
+
+        {/* 🔹 Heading */}
+        <div className="text-center font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-800">
+          Navium
+        </div>
+
+        {/* 🔹 Subheading */}
+        <div className="text-center font-semibold text-lg sm:text-2xl mt-4 text-zinc-700">
+          Your Compass to Maritime Innovation.
+        </div>
 
 
 
+        {/* 🔹 Main Content Section: Stacks on small, row on large */}
+        <div className="flex flex-col lg:flex-row gap-8 mt-10 items-center">
+          {/* 🔸 Image */}
+          <img
+            className="w-full text-center w-md lg:w-[50%] h-auto object-cover rounded shadow-lg"
+            src={img}
+            alt="Navium"
+          />
+          {/* 🔸 Paragraph Text */}
+          <p className="text-zinc-800 text-center lg:text-left leading-relaxed text-sm sm:text-base lg:w-1/2">
+            Navium Maritime Shipping Services Pvt Ltd, established in 2020, specializes in providing top-notch technical services to global clients in the maritime industry.
+            Our highly skilled consultants conduct thorough audits of ships, systems, and Owners/Operators offices, offering independent assessments aligned with industry standards.
+            <br /><br />
+            With extensive experience, our consultants perform fleet-wide navigation audits for Oil Tankers, Gas Carriers, large container ships, and bulk carrier Owners. This allows us to provide valuable feedback to improve performance. Clients have praised the effectiveness of our audits, highlighting our meticulous approach and attention to detail.
+            <br /><br />
+            As part of our continued expansion, we established 9M Solutions Pte. Ltd. in 2023. Based in Singapore, this subsidiary focuses on advanced training, e-learning, and Competency Learning Management System (CLMS) services, empowering seafarers across diverse shipping companies.
+            With a commitment to excellence and innovation, Navium Maritime Shipping Services Pvt. Ltd. remains a trusted partner in driving operational success and professional growth in the maritime industry.
+          </p>
+
+
+        </div>
+
+        {/* 🔹 CTA Button */}
+        <div className="mt-8">
+          <Button content="Know more" width="12rem" link="/aboutus" />
+        </div>
+
+      </div>
 
 
       <div className='mx-auto w-100 mt-25 tracking-widest font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
