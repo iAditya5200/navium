@@ -38,7 +38,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="w-full mt-20  border-t border-blue-950 px-6  py-8 flex flex-col md:justify-evenly md:flex-row items-start md:items-center gap-8 md:gap-10">
-      
+
       {/* Logo */}
       <div className="md:border-r md:pr-10 border-blue-950 mx-auto md:mx-0">
         <h1 className="font-bold text-[8vw] md:text-[3vw] text-red-500 tracking-tighter">Navium</h1>
@@ -46,35 +46,41 @@ function Footer() {
 
       {/* Links and description container */}
       <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-full">
+        <div className='flex gap-10'>
+          {/* Social */}
+          <div className="flex flex-col mx-auto md:mx-0 text-center">
+            <h3 className="text-red-500 font-semibold mb-2 ">Social</h3>
+            {['linkedin'].map((item, index) => (
+              <a
+                key={index}
+                href="https://www.linkedin.com/company/72324415/admin/dashboard/"
+                target='_blank'
+                className="text-sky-900  hover:text-red-500 text-sm md:text-[1vw]"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
 
-        {/* Social */}
-        <div className="flex flex-col mx-auto md:mx-0">
-          <h3 className="text-red-500 font-semibold mb-2">Social</h3>
-          {['linkedin'].map((item, index) => (
-            <a
-              key={index}
-              href="#"
-              className="text-sky-900  hover:text-red-500 text-sm md:text-[1vw]"
-            >
-              {item}
-            </a>
-          ))}
+          {/* Sitemap */}
+          <div className="flex flex-col mx-auto md:mx-0 text-center">
+            <h3 className="text-red-500 font-semibold mb-2">Sitemap</h3>
+            {[
+              { name: 'About Us', url: '/aboutus' },
+              { name: 'E-Library', url: '/library' },
+              { name: 'Services', url: '/services' },
+              { name: 'Contact', url: '/contact' },
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={item.url}
+                className="text-sky-900 hover:text-red-500 text-sm md:text-[1vw]"
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
         </div>
-
-        {/* Sitemap */}
-        <div className="flex flex-col mx-auto md:mx-0">
-          <h3 className="text-red-500 font-semibold mb-2">Sitemap</h3>
-          {['About-us', 'e-library', 'services', 'contact'].map((item, index) => (
-            <a
-              key={index}
-              href="#"
-              className="text-sky-900 hover:text-red-500 text-sm md:text-[1vw]"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-
         {/* Company Description */}
         <div className="md:w-3/4 text-zinc-800 text-sm md:text-[1vw] text-center md:text-left md:text-[1.5vw]">
           <p>
