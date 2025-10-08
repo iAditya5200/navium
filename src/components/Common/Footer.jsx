@@ -71,13 +71,13 @@ function Footer() {
               { name: 'Services', url: '/services' },
               { name: 'Contact', url: '/contact' },
             ].map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.url}
+                to={item.url}
                 className="text-sky-900 hover:text-red-500 text-sm md:text-[1vw]"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
