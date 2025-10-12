@@ -14,10 +14,11 @@
 // export default Button
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 function Button({ content, width, link = "#", font = "10px" }) {
   return (
-    <a href={link}>
+    <Link to = {link}>
       <div
         style={(width ? { width } : {})
 
@@ -31,7 +32,7 @@ function Button({ content, width, link = "#", font = "10px" }) {
         <span className="whitespace-nowrap">{content}</span>
         <FaArrowRight className="text-sm sm:text-base md:text-lg ml-2" />
       </div>
-    </a>
+</Link>
   );
 }
 
