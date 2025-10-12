@@ -20,7 +20,7 @@ We understand that the dry bulk industry thrives on safety, compliance, and oper
       </div>
       <img className=' h-[60vh] object-fit mx-auto my-4' src={right} alt="" />
       <div className='w-full flex justify-center '>
-        <Button width="15vw" content="Get in Touch" />
+        <Button width="15vw" content="Get in Touch" link='/contact' />
       </div>
       <Footer />
     </div>

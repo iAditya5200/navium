@@ -11,6 +11,8 @@ import Dry from '../pages/Dry'
 import Right from '../pages/Right'
 import Mooring from '../pages/Mooring'
 import Audit from '../pages/Audits'
+import Contact from '../pages/Contact'
+import Blogs from '../pages/Blogs'
 function Routing() {
   return (
     <div>
@@ -23,9 +25,11 @@ function Routing() {
         <Route path='/onboard' element={<Onboard />} />
         <Route path='/competence' element={<Competence />} />
         <Route path='/dry' element={<Dry />} />
-        <Route path='/right' element={<Right/>} />
-         <Route path='/mooring' element={<Mooring/>} />
-          <Route path='/audit' element={<Audit/>} />
+        <Route path='/right' element={<Right />} />
+        <Route path='/mooring' element={<Mooring />} />
+        <Route path='/audit' element={<Audit />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes></div>
   )
 }

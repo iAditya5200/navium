@@ -8,6 +8,7 @@ import Button from '/src/components/Common/Button'
 import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
+import Marquees2 from '/src/components/Home/Marquees2'
 
 import Contact from '../components/Home/Contact'
 
@@ -79,7 +80,7 @@ function Home() {
         </div>
 
         {/* 🔹 CTA Button */}
-        <div className="mt-8">
+        <div className="mt-8 w-full flex justify-center">
           <Button content="Know more" width="12rem" link="/aboutus" />
         </div>
 
@@ -101,7 +102,7 @@ function Home() {
         Our Services
       </div>
 
-      <Marquees />
+      <Marquees2 />
       <hr />
       <div className='mx-auto tracking-widest w-[100%] mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Stats

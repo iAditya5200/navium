@@ -69,7 +69,7 @@ const Dry = () => {
 
             </div>
             <div className='w-full flex justify-center '>
-                <Button width="15vw" content="Contact-us" />
+                <Button width="15vw" content="Contact-us" link='/contact' />
             </div>
             <Footer />
         </div>

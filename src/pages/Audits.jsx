@@ -107,7 +107,7 @@ const Dry = () => {
 
             <h1 className="text-4xl font-bold text-center my-10">Get your audit done now !</h1>
             <div className='w-full flex justify-center '>
-                <Button width="15vw" content="Get in Touch" />
+                <Button width="15vw" content="Get in Touch" link='/contact' />
             </div>
             <Footer />
         </div>

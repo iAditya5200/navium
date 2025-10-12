@@ -223,8 +223,8 @@ function Navbar() {
   const servicesDropdown = [
     { name: "ONBOARD SERVICES", to: "/onboard" },
     { name: "COMPETENCE MANAGEMENT SYSTEMS", to: "/competence" },
-    { name: "E-LEARNING LIBRARY", to: "/library" },
-    { name: "TRAINING SOFTWARE & CONTENT", to: "/training" },
+    { name: "E-LEARNING LIBRARY", to: "/library" }
+   
   ];
 
   const aboutDropdown = [
@@ -323,7 +323,7 @@ function Navbar() {
               )}
             </div>
           ))}
-          <Button content="Contact-us" width="100%" />
+          <Button content="Contact-us" link="/contact" width="fit-content" />
         </div>
       </div>
 

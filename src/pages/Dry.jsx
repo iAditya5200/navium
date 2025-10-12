@@ -19,7 +19,7 @@ const Dry = () => {
       </div>
       <img className=' h-[60vh] object-fit mx-auto my-4' src={img} alt="" />
       <div className='w-full flex justify-center '>
-        <Button width="15vw" content="Get DryScore" />
+        <Button width="15vw" content="Get DryScore" link='/contact' />
       </div>
       <Footer />
     </div>
