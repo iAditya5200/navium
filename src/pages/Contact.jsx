@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Common/Navbar";
 import Footer from "../components/Common/Footer";
 import Contact from "../components/Home/Contact";
+import Button from "../components/Common/Button";
 
 function ContactUs() {
   return (
@@ -26,7 +27,9 @@ function ContactUs() {
           <Contact />
         </div>
       </div>
-
+       <div className='m-5'>
+  <Button  content="Back to home" link="/" width="fit-content" />
+            </div>
       <Footer />
     </div>
   );

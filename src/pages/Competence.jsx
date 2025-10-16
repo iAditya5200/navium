@@ -46,7 +46,9 @@ function Competence() {
                 <Button width="15vw" content="Contact-us" link='/contact' />
             </div>
 
-
+ <div className='w-full m-10 '>
+                <Button content="Back to previous menu" link="/services" width="fit-content" />
+              </div>
             <Footer />
         </div>
     )

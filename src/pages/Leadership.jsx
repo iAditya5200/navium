@@ -28,6 +28,9 @@ const Leadership = () => {
         <p className='text-xs mt-1'>A Master Mariner, his previous work experience includes stints with oil majors ExxonMobil and BP, in a variety of roles including vetting, incident investigations, inspections, and Quality Assurance. </p>
         <p className='text-xs mt-1'>Punit commenced his shipping career at sea in 1996 and has sailed for 11 years on a variety of tanker vessels up to the rank of Master Mariner. </p>
        </div>
+         <div className='m-5'>
+  <Button  content="Back to home" link="/" width="fit-content" />
+            </div>
       <Footer />
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import ScrollToTop from "./ScrollToTop"
 import Home from '../pages/Home'
 import Library from '../pages/Library'
 import About from '../pages/About'
@@ -16,6 +17,7 @@ import Blogs from '../pages/Blogs'
 function Routing() {
   return (
     <div>
+         <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/library' element={<Library />} />

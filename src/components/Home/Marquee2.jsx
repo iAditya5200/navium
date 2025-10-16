@@ -2,35 +2,40 @@ import { motion } from 'motion/react'
 import React from 'react'
 function Marquee({ value, dir }) {
 
- 
+
     return (
-        <div className=' mt-5 w-full bg-zinc-400 h-fit-content flex gap-[8vw]'>
-            <motion.div className='flex bg-zinc-400 text-zinc-900 gap-[8vw] leading-4 mt-2 '
-                initial={{ x: dir === 'left' ? "-100%" : "0" }}
+        <div className=' mt-5 w-full  h-fit-content flex '>
+    <motion.div className='flex text-zinc-900 leading-4  '
+            initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
-                transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
+                transition={{ ease: "linear", duration: 15, repeat: Infinity }}
+                >
 
                 {value.map((elem, index) => {
-                    return (<div className='min-w-45 flex text-xl font-semibold items-center justify-evenly flex min-h-20 '>
-                        <p className='text-center text-md md:texl-2xl'>{elem.name}</p>
-                        {/* <img src= {elem.url} style={{ width: elem.w }} className={` w-["${elem.w}"]  object-cover ' alt="logo"`} /> */}
-                        
-
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[50vh]  '>
+                        <p className='text-center  text-md md:texl-2xl'>{elem.name}</p>
+                        <div className='text-xs  top-[60%] invisible group-hover:visible absolute w-full h-full'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto temporibus nisi, dolores enim optio dignissimos! Soluta exercitationem, in saepe rem pariatur neque ab iusto, eaque cum velit eum quod!
+                        </div>
                     </div>)
 
                 })
 
                 }
             </motion.div>
-            <motion.div className='flex bg-zinc-400 gap-[8vw] text-zinc-900 leading-4 mt-2 '
-                initial={{ x: dir === 'left' ? "-100%" : "0" }}
+            <motion.div className='flex  text-zinc-900 leading-4  '
+            initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
-                transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
+                transition={{ ease: "linear", duration: 15, repeat: Infinity }}
+                >
 
                 {value.map((elem, index) => {
-                    return (<div className='min-w-45  flex text-l text-center font-semibold items-center justify-evenly flex min-h-20  '>
-                        <p className='text-center text-md md:texl-2xl'>{elem.name}</p>
-                                       </div>)
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[50vh]  '>
+                        <p className='text-center  text-md md:texl-2xl'>{elem.name}</p>
+                        <div className='text-xs  top-[60%] invisible group-hover:visible absolute w-full h-full'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto temporibus nisi, dolores enim optio dignissimos! Soluta exercitationem, in saepe rem pariatur neque ab iusto, eaque cum velit eum quod!
+                        </div>
+                    </div>)
 
                 })
 
@@ -81,5 +86,5 @@ export default Marquee
 //         </div>
 //     );
 // }
-
+ 
 // export default Marquee;

@@ -9,7 +9,7 @@ import Footer from '/src/components/Common/Footer'
 
 import Marquees from '/src/components/Home/Marquees'
 import Marquees2 from '/src/components/Home/Marquees2'
-
+import LogoDesclaimer from '/src/components/Home/CRmarquees'
 import Contact from '../components/Home/Contact'
 
 function Home() {
@@ -91,6 +91,9 @@ function Home() {
         Our Clients
       </div>
       <Marquees />
+      <LogoDesclaimer/>
+ 
+     
       <hr />
       <div className='mx-auto w-[100%] tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         What we do
@@ -98,15 +101,16 @@ function Home() {
       < p className='text-center my-5'>Navium has been a prominent player in the industry since 2016, providing marine-related technical services to a global clientele. Whether you’re a Dry Fleet or Tanker Fleet operator, at Navium Marine, we tailor our solutions to your unique fleet needs. Our dedicated team of Subject Matter Experts is driven by the goal of optimizing your fleet’s performance.</p>
       <Clients />
 
-      <div className='mx-auto w-[100%] tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
+      {/* <div className='mx-auto w-[100%] tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Services
-      </div>
+      </div> */}
 
       <Marquees2 />
-      <hr />
+   
       <div className='mx-auto tracking-widest w-[100%] mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Our Stats
       </div>
+
       <Stripes />
 
       <div className='mx-auto w-[100%] text-left pl-[2vw] mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>

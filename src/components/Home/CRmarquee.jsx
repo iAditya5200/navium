@@ -1,29 +1,20 @@
 import { motion } from 'motion/react'
 import React from 'react'
-function Marquee({ value, dir }) {
+function CRmarquee({ value, dir }) {
 
-    const sizeClasses = {
-        small: "w-16 sm:w-20 md:w-24",
-        medium: "w-24 sm:w-28 md:w-32",
-        large: "w-32 sm:w-36 md:w-40",
-        xlarge: "w-36 sm:w-44 md:w-52"
-    };
+
     return (
-        <div className=' mt-5 w-full bg-zinc-400 h-fit-content flex '>
-            <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4 mt-2 '
+        <div className=' w-full bg-zinc-400 flex '>
+            <motion.div className='flex bg-zinc-400 text-zinc-900  leading-4  '
                 initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
-                transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
+                transition={{ ease: "linear", duration:9.5, repeat: Infinity }} >
 
                 {value.map((elem, index) => {
-                    return (<div className='min-w-45 flex mx-10 text-xl font-semibold items-center justify-evenly flex min-h-20 '>
-                        <p>{elem.name}</p>
+                    return (<div className='w-[35vw] flex mx-10  font-semibold items-center justify-evenly flex  '>
+                        <p className='text-center  text-sm md:texl-sm'>{elem.name}</p>
                         {/* <img src= {elem.url} style={{ width: elem.w }} className={` w-["${elem.w}"]  object-cover ' alt="logo"`} /> */}
-                        <img
-                            src={elem.url}
-                            alt={elem.name || "logo"}
-                            className={`object-contain ${sizeClasses[elem.size] || 'w-24'}`}
-                        />
+
 
                     </div>)
 
@@ -31,19 +22,15 @@ function Marquee({ value, dir }) {
 
                 }
             </motion.div>
-            <motion.div className='flex bg-zinc-400  text-zinc-900 leading-4 mt-2 '
+            <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4 '
                 initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
-                transition={{ ease: "linear", duration: 15, repeat: Infinity }} >
+                transition={{ ease: "linear", duration: 9.5, repeat: Infinity }} >
 
                 {value.map((elem, index) => {
-                    return (<div className='min-w-45 mx-10 flex text-xl text-center font-semibold items-center justify-evenly flex min-h-20  '>
-                        <p>{elem.name}</p>
-                        <img
-                            src={elem.url}
-                            alt={elem.name || "logo"}
-                            className={`object-contain ${sizeClasses[elem.size] || 'w-24'}`}
-                        />                    </div>)
+                    return (<div className='w-[35vw] mx-10  flex text-sm text-center font-semibold items-center justify-evenly flex '>
+                        <p className='text-center text-sm md:texl-sm'>{elem.name}</p>
+                    </div>)
 
                 })
 
@@ -54,7 +41,7 @@ function Marquee({ value, dir }) {
     )
 }
 
-export default Marquee
+export default CRmarquee
 
 // import { motion } from 'framer-motion'; // fixed incorrect import path
 // import React from 'react';

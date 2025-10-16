@@ -101,14 +101,14 @@ function Work() {
       <div className="z-10 text-white flex flex-col items-center justify-center text-center px-4">
         
         {/* Welcome Text */}
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
-          className="font-[Cookie] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2"
+          className="font-[] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2"
         >
-          Welcome To
-        </motion.h1>
+          Welcome 
+        </motion.h1> */}
 
         {/* Navium Text */}
         <motion.h1

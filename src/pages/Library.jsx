@@ -11,20 +11,51 @@ import SliderComp from '../components/Common/SliderComp'
 const Library = () => {
   return (
     <div className='min-h-screen w-full font-[Parkinsans] ' >
-      <Navbar/>
-      <div className='h-fit-content w-[100%] text-5xl text-zinc-100 justify-center  items-center'>
-        <HeadingImg h="30vw" url={img} w="90vw" text= "Learning Center" />
-         
-        {/* <h2 className="text-zinc-900 w-full bg-red-100 text-center mt-10 mb-3">Category 1</h2> */}
-        {/* <div className='flex gap-10 w-full h-full items-center justify-center flex-wrap'>
-        <Video title = "Title will be here" url = {vdo}/>
-        <Video title = "Title will be here" url = {vdo}/>
-        </div> */}
+      <Navbar />
+      <HeadingImg h="30vw" url={img} w="90vw" text="Learning Center" />
+      <div className='text-zinc-900 text-center my-10 text-xl md:text-md '>
+        An e-learning library is a comprehensive digital repository of training materials,
+        courses, and resources designed to facilitate self-paced and flexible learning for
+        seafarers. It leverages technology to provide an accessible and scalable solution
+        for maritime training needs, enabling seafarers to enhance their knowledge and
+        skills anytime, anywhere. </div>
+      <h2 className="text-3xl mt-10 font-semibold text-sky-950 mb-6 text-center">
+        Key Features of an E-Learning Library
+      </h2>
 
-        <SliderComp/>
-       
-         </div>
-<Footer/>
+      <ul className="list-disc mx-10 list-inside space-y-2 text-gray-700 leading-relaxed">
+        <li>
+          Diverse Content.
+        </li>
+        <li>
+          24/7 Accessibility 
+        </li>
+        <li>
+          Customizable Learning Paths
+        </li>
+        <li>
+          Compliance and Certification
+        </li>
+        <li>
+          Uniform learning platform irrespective of Nationality
+        </li>
+        <li>
+          Interactive Assessments
+        </li>
+        <li> 
+           Continuous Updates
+        </li>
+      </ul>
+
+
+      <div className='h-fit-content w-[100%] text-5xl text-zinc-900 '>
+        <div className='text-3xl w-[100%] text-center my-10'>Enjoy the learning !</div>
+        <SliderComp />
+
+      </div>
+
+
+      <Footer />
     </div>
   )
 }

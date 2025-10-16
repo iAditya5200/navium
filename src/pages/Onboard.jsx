@@ -3,6 +3,7 @@ import Navbar from '../components/Common/Navbar'
 import HeadingImg from '../components/Common/HeadingImg'
 import Footer from '../components/Common/Footer'
 import img from '/src/assets/urbanShip.jpg'
+import Button from '../components/Common/Button'
 
 function Onboard() {
     console.log('onboard')
@@ -65,7 +66,9 @@ function Onboard() {
                    
                 </ul>
             </div>
-            
+             <div className='w-full m-10 '>
+                <Button content="Back to previous menu" link="/services" width="fit-content" />
+              </div>
 
             <Footer />
         </div>

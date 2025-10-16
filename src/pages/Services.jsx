@@ -12,6 +12,7 @@ import img7 from '../assets/dbs.jpg'
 import img8 from '../assets/audi.jpg'
 import img9 from '../assets/carbon.jpg'
 import Cards from '../components/Common/Cards'
+import Button from '../components/Common/Button'
 
 function Services() {
   const data = [{ name: "E-learning", img: img2  , link :"/library"},
@@ -35,7 +36,9 @@ function Services() {
         return ( <Cards key={index} name = {item.name} url={item.img} link = {item.link} />)
        })}
       </div>
-    
+      <div className='m-5'>
+  <Button  content="Back to home" link="/" width="fit-content" />
+            </div>
       <Footer />
     </div>
   )

@@ -139,7 +139,10 @@ function About() {
                     </div>
                 ))}
             </div>
-
+            <div className='m-5'>
+  <Button  content="Back to home" link="/" width="fit-content" />
+            </div>
+          
             <Footer />
         </div>
     )
