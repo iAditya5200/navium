@@ -9,9 +9,9 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
-    <GlobalLoader/>
-    <Routing/> 
-    
+      <GlobalLoader>
+        <Routing />
+      </GlobalLoader>
     </>
   )
 }
