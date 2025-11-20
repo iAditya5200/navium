@@ -13,10 +13,10 @@ function Clients() {
       setShift(val * 15)
     }
    
-    const data = [{ name: "CDI INSPECTION", desc: "Mediterranean Shipping Company S.A., branded as MSC, is an international shipping line founded by Gianluigi Aponte in Italy in 1970.", logo: "/src/assets/msclogo.webp", bg: "bg-voilet-700" },
-    { name: "INTERNAL AUDITS ", desc: "A.P. Møller – Mærsk A/S (Danish: [ˈɛˀ ˈpʰe̝ˀ ˈmølˀɐ ˈmɛɐ̯sk]), usually known simply as Maersk ( English: /mɛərsk/ MAIRSK), is a Danish shipping and logistics company founded in 1904 by Arnold Peter ", logo: "/src/assets/maersk.png", bg: "bg-blue-700" },
-    { name: "TRAINING ", desc: "China COSCO Shipping Corporation Limited (branded as COSCO Shipping) is a Chinese state-owned multinational marine transportation service conglomerate, headquartered in Shanghai.", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/COSCOCS-ver1.svg/250px-COSCOCS-ver1.svg.png", bg: "bg-voilet-700" },
-    { name: "SUPERCARGO", desc: "Kawasaki Kisen Kaisha, Ltd. (川崎汽船株式会社, Kawasaki Kisen Kabushiki gaisha; branded as 'K' Line) is a Japanese transportation company.", logo: "/src/assets/kline.png", bg: "bg-blue-700" },
+    const data = [{ name: "CDI INSPECTION", desc: "A CDI inspection evaluates a vessel’s safety, cargo-handling standards, environmental practices, and compliance with chemical industry requirements. It ensures ship suitability for chemical transport and enhances operational transparency and quality", logo: "/src/assets/msclogo.webp", bg: "bg-voilet-700" },
+    { name: "INTERNAL AUDITS ", desc: "Internal audits assess a vessel’s safety, environmental compliance, documentation, and operational standards. They identify gaps, ensure adherence to ISM/ISPS codes, improve performance, and prepare ships for external inspections. ", logo: "/src/assets/maersk.png", bg: "bg-blue-700" },
+    { name: "TRAINING ", desc: "Training develops seafarers’ skills through practical drills, safety procedures, equipment handling, and regulatory courses. It ensures competence, safety compliance, emergency readiness, and efficient operation of ships in various marine conditions.", bg: "bg-voilet-700" },
+    { name: "SUPERCARGO", desc: "A supercargo supervises cargo operations on a vessel, ensuring safe loading, stowage, and discharge. They coordinate with crew, port staff, and agents, maintain documentation, prevent cargo damage, and resolve handling issues..", logo: "/src/assets/kline.png", bg: "bg-blue-700" },
 
     ]
     return (
