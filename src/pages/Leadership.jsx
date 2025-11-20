@@ -3,6 +3,7 @@ import Navbar from '../components/Common/Navbar'
 import Footer from '../components/Common/Footer'
 import img from '/src/assets/leadership.jpg'
 import HeadingImg from '../components/Common/HeadingImg'
+import Button from '../components/Common/Button'
 
 const Leadership = () => {
   return (
