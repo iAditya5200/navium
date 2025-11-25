@@ -24,13 +24,14 @@
 // export default Leaders
 import React from 'react';
 import Leader from './Leader';
-import demoDp from '/src/assets/demoDp.jpg';
+import demoDp from '/src/assets/naveenDP.jpg';
+import demoDp2 from '/src/assets/puneetDP.jpg';
 import Button from '../Common/Button';
 
 function Leaders() {
   const leaders = [
-    { name: 'Punit Singh', des: 'Captain', post: 'Founder at Navium', url: demoDp },
-    { name: 'Navin Chhikara', des: 'Captain', post: 'Co-founder at Navium', url: demoDp }
+    { name: 'Capt. Puneet Singh', des: 'Master Mariner', post: 'Founder at Navium', url: demoDp2 },
+    { name: 'Capt. Naveen Chhikara', des: 'Master Mariner', post: 'Co-founder at Navium', url: demoDp }
   ];
 
   return (

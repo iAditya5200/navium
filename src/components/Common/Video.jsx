@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 
-const Video = ({ title, url, className = "" }) => {
+const Video = ({ title, url, className = "" ,controls }) => {
   return (
     <div
       className={` overflow-hidden rounded transition-transform duration-300 ${className}`}
@@ -18,6 +18,7 @@ const Video = ({ title, url, className = "" }) => {
         <motion.video
           className="w-full h-full object-cover"
           controls
+          muted
           src={url}
         />
       </div>

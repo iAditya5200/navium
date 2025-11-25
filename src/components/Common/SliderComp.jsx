@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import Video from "./Video";
-import vdo from '/src/assets/Ship3.mp4'
+import vdo from '/src/assets/Accident-In-Machinery.mp4'
+import vdo2 from '/src/assets/Cargo-Tank-Relief.mp4'
+
 
 function AsNavFor() {
   const [nav1, setNav1] = useState(null);
@@ -14,7 +16,7 @@ function AsNavFor() {
     setNav2(sliderRef2.current);
   }, []);
 
-  const slides = [1, 2, 3, 4, 5, 6];
+  const slides = [{title:"Cargo Tank Relief Valve",link:vdo} ,{ title:"Accident In Machinery Space" , link:vdo2} ];
 
   return (
     <div className="slider-container text-center text-zinc-900  overflow-hidden text-xs">
@@ -22,7 +24,7 @@ function AsNavFor() {
       <Slider asNavFor={nav2} ref={sliderRef1}>
         {slides.map((num) => (
           <div className="h-[80vh] p-3" key={num}>
-           <Video className="w-[100%] h-[100%]  object-cover" url={vdo} title="Thumb" />
+           <Video className="w-[100%] h-[100%]  object-cover" url={num.link}  title={num.title} />
            </div>
         ))}
       </Slider>
@@ -36,7 +38,7 @@ function AsNavFor() {
       >
         {slides.map((num) => (
           <div className=' w-full overflow-hidden px-2' key={num}>
-            <Video className='w-[100%]' title="Title will be here" url={vdo} />
+            <Video className='w-[90%]' title={num.title} url={num.link}  />
             
           </div>
         ))}

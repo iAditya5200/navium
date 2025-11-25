@@ -64,8 +64,8 @@ function Footer() {
           </div>
 
           {/* Sitemap */}
-          <div className="flex flex-col mx-auto md:mx-0 text-center">
-            <h3 className="text-red-500 font-semibold mb-2">Sitemap</h3>
+          <div className="flex mx-auto gap-10 items-center md:mx-0 text-center">
+            
             {[
               { name: 'About Us', url: '/aboutus' },
               { name: 'E-Library', url: '/library' },
@@ -83,13 +83,10 @@ function Footer() {
           </div>
         </div>
         {/* Company Description */}
-        <div className="md:w-3/4 text-zinc-800 text-sm md:text-[1vw] text-center md:text-left md:text-[1.5vw]">
-          <p>
-            Navium Maritime Shipping Services Pvt Ltd, established in 2020, specializes in
-            providing top-notch technical services to global clients in the maritime industry.
-          </p>
+        <div className=" text-zinc-800 text-sm md:text-[1vw] md:text-left md:text-[1.5vw]">
+          
           <div className="mt-4 w-full text-end font-bold text-zinc-500 text-xs md:text-sm">
-            Developed by Aditya
+            Developed by AdityaLabs
           </div>
         </div>
       </div>
