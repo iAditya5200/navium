@@ -62,10 +62,11 @@ function Footer() {
               </a>
             ))}
           </div>
-
+ 
           {/* Sitemap */}
-          <div className="flex mx-auto gap-10 items-center md:mx-0 text-center">
-            
+          <div className="flex flex-col mx-auto md:mx-0 gap-4 items-center 
+           md:flex-row md:items-center text-center md:text-left">
+            <h3 className="text-red-500 font-semibold mb-2 sm:hidden">Sitemap</h3>
             {[
               { name: 'About Us', url: '/aboutus' },
               { name: 'E-Library', url: '/library' },
