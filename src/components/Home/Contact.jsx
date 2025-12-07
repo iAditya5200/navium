@@ -112,7 +112,7 @@ function Contact() {
             title="Navium Location"
             className="w-full h-full rounded"
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfmi33ACI5ncLgXyFblzp0qTXhvyaYXKA&q=C-113,1st Floor,BLK-GH,PKT-4,SEC-29,ROHINI,DELHI"
             allowFullScreen
             loading="lazy"
           />
