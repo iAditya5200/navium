@@ -14,7 +14,7 @@
         ];
 
         return (
-            <div className='h-full w-full overflow-hidden relative'>
+            <div className='h-[50%] md:h-full w-full overflow-hidden relative'>
                 <Marquee2 value={data} dir="left" />
             </div>
         )

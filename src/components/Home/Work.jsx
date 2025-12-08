@@ -88,6 +88,8 @@ function Work() {
       {/* 🔹 Background Video Layer */}
       <div className="absolute inset-0 z-0">
         <video
+        fetchpriority="high"
+         preload="auto"
           className="w-full h-full object-cover"
           autoPlay
           loop
@@ -122,8 +124,8 @@ function Work() {
 
         {/* Beyond Horizon (fades out early) */}
         <motion.div
-          animate={{ opacity: 0 }}
-          transition={{ delay: 1, duration: 2 }}
+          animate={{ opacity: 0 , scale:1 }}
+          transition={{ delay: 2, duration: 2 }}
           className="absolute text-center"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold">

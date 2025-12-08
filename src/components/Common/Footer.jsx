@@ -46,8 +46,8 @@ function Footer() {
       </div>
 
       {/* Links and description container */}
-      <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-full">
-        <div className='flex gap-10'>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-full justify-evenly ">
+        <div className='flex gap-20 '>
           {/* Social */}
           <div className="flex flex-col mx-auto md:mx-0 text-center">
             <h3 className="text-red-500 font-semibold mb-2 ">Social</h3>
@@ -64,10 +64,11 @@ function Footer() {
           </div>
  
           {/* Sitemap */}
-          <div className="flex flex-col mx-auto md:mx-0 gap-4 items-center 
-           md:flex-row md:items-center text-center md:text-left">
-            <h3 className="text-red-500 font-semibold mb-2 sm:hidden">Sitemap</h3>
-            {[
+          <div className="flex flex-col  mx-auto md:mx-0  items-center 
+           md:items-center text-center md:text-left">
+            <h3 className="text-red-500 font-semibold mb-1 ">Sitemap</h3>
+          <div className='flex flex-col  mx-auto md:mx-0  items-center 
+           md:flex-row md:items-center text-center gap-4 md:text-left'>  {[
               { name: 'About Us', url: '/aboutus' },
               { name: 'E-Library', url: '/library' },
               { name: 'Services', url: '/services' },
@@ -80,13 +81,13 @@ function Footer() {
               >
                 {item.name}
               </Link>
-            ))}
+            ))}</div>
           </div>
         </div>
         {/* Company Description */}
-        <div className=" text-zinc-800 text-sm md:text-[1vw] md:text-left md:text-[1.5vw]">
+        <div className=" text-zinc-800 w-full text-sm text-center md:w-[20%] md:text-left md:text-[1.5vw]">
           
-          <div className="mt-4 w-full text-end font-bold text-zinc-500 text-xs md:text-sm">
+          <div className="mt-4 font-bold text-zinc-500  ">
             Developed by AdityaLabs
           </div>
         </div>

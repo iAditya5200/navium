@@ -12,7 +12,7 @@ function Marquee({ value, dir }) {
                 >
 
                 {value.map((elem, index) => {
-                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[50vh] m-5  '>
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[50vh] m-5  '>
                         <p className='text-center  text-sm  md:text-2xl'>{elem.name}</p>
                         <div className='text-xs  top-[60%] invisible group-hover:visible absolute w-full h-full'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto temporibus nisi, dolores enim optio dignissimos! Soluta exercitationem, in saepe rem pariatur neque ab iusto, eaque cum velit eum quod!
@@ -30,7 +30,7 @@ function Marquee({ value, dir }) {
                 >
 
                 {value.map((elem, index) => {
-                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[50vh] m-5  '>
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[50vh] m-5  '>
                         <p className='text-center  text-sm lg:text-2xl'>{elem.name}</p>
                         <div className='text-xs  top-[60%] invisible group-hover:visible absolute w-full h-full'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto temporibus nisi, dolores enim optio dignissimos! Soluta exercitationem, in saepe rem pariatur neque ab iusto, eaque cum velit eum quod!

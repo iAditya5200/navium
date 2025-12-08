@@ -120,7 +120,7 @@ function Contact() {
       </motion.div>
 
       {/* Right panel: Enquiry Form */}
-      <div className="md:w-2/3 w-full rounded-xl overflow-hidden p-4 bg-white shadow-md">
+      <div className="md:w-2/3 w-full h-[50vh] md:h-[95vh] rounded-xl overflow-hidden p-4 bg-white shadow-md">
         <h3 className="font-bold text-xl text-zinc-800 mb-4">Have any enquiry?</h3>
         <EnquiryForm />
       </div>
