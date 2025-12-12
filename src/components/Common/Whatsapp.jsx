@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react'
 import { FaWhatsapp } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+
 function Whatsapp() {
 const MotionWhatsapp = motion(FaWhatsapp);
     
@@ -15,13 +15,14 @@ const MotionWhatsapp = motion(FaWhatsapp);
     <motion.div  animate={{
         rotate: [0, -8, 8, -8, 8, 0],// jiggle
         scale: [1, 1.05, 1], //pulse
+        opacity:[0,1]
       }}
       transition={{
         duration: 0.8,      // jiggle kitni der chale
         repeat: Infinity,   // bar-bar
         repeatDelay: 2,     // har jiggle ke baad 3 sec pause
         ease: "easeInOut",
-      }}  className='h-[5vw] w-[5vw]  fixed z-10 top-[80%] left-[90%]'
+      }}  className='h-[5vw] w-[5vw]  fixed z-10 top-[70%] left-[75%] md:top-[80%] md:left-[90%]'
     ><MotionWhatsapp
         size={90}
         color="green"

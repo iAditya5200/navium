@@ -72,14 +72,15 @@ import React from 'react';
 import { FaHome } from 'react-icons/fa';
 import { IoMdCall } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
+import { FaWhatsapp } from "react-icons/fa6";
 import EnquiryForm from './EnquiryForm';
 
 function Contact() {
   return (
-    <div className="mt-5 px-4 md:px-10 w-full min-h-screen flex flex-col md:flex-row gap-8 md:gap-10">
+    <div className="mt-5 px-4 md:px-10 gap-6 w-full min-h-screen flex flex-col md:flex-row  md:justify-between">
       
       {/* Left panel: Contact info + map */}
-      <motion.div className="md:w-1/3 w-full rounded-xl flex flex-col">
+      <motion.div className="md:w-1/2 w-full rounded-xl flex flex-col">
         <div className="mb-6">
           <div className="flex items-center gap-3 text-zinc-800 mb-1">
             <FaHome />
@@ -90,11 +91,12 @@ function Contact() {
           </p>
 
           <div className="flex items-center gap-3 text-zinc-800 mt-4 border-t border-blue-900 pt-2">
-            <IoMdCall />
-            <h3 className="font-semibold">Call Us :</h3>
+            
+            <h3 className="font-semibold">Connect to us :</h3>
           </div>
           <p className="text-xs text-zinc-800 max-w-sm">
-            +91-9319603502 / 9619661049 / 9582361578 <br /> Landline : +91-11-71862678
+           <p><IoMdCall className='inline' /> +91-9319603502 </p> 
+          <div> <FaWhatsapp className='inline'/> 9619661049 / 9582361578</div>  <br /> Landline : +91-11-71862678
           </p>
 
           <div className="flex items-center gap-3 text-zinc-800 mt-4 border-t border-blue-900 pt-2">
@@ -120,7 +122,7 @@ function Contact() {
       </motion.div>
 
       {/* Right panel: Enquiry Form */}
-      <div className="md:w-2/3 w-full h-[50vh] md:h-[95vh] rounded-xl overflow-hidden p-4 bg-white shadow-md">
+      <div className=" md:w-2/5 w-full h-90 md:h-140 rounded-xl overflow-hidden p-4 bg-white shadow-md">
         <h3 className="font-bold text-xl text-zinc-800 mb-4">Have any enquiry?</h3>
         <EnquiryForm />
       </div>

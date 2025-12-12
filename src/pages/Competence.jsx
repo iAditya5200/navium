@@ -9,12 +9,12 @@ function Competence() {
     return (
         <div className='  w-full font-[Parkinsans] bg-[#F2F0EA] ' >
             < Navbar />
-            <HeadingImg h="25vw" url={img} w="90vw" text="Competence management" />
+            <HeadingImg h="18vw" url={img} w="90vw" text="Competence management" />
 
 
 
             <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-2xl">
-                <h4 className="text-xl font-semibold text-red-600 mb-3 text-center">
+                <h4 className="text-md font-semibold text-red-600 mb-3 text-center">
                     A Competence Management System (CMS) is a structured framework designed to assess, develop, and maintain the skills and knowledge required for individuals to perform their roles effectively. In the maritime industry, CMS ensures that seafarers meet regulatory standards, company-specific requirements, and operational expectations. By integrating training, performance evaluation, and continuous professional development, CMS enhances safety, compliance, and efficiency onboard vessels. It is a vital tool for fostering a competent and confident workforce while aligning with international maritime standards. 
                 </h4>
                 <h2 className="text-3xl font-semibold text-sky-950 mb-6 text-center">

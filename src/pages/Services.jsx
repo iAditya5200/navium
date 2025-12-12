@@ -18,11 +18,11 @@ function Services() {
   const data = [{ name: "E-learning", img: img2  , link :"/library"},
   { name: "Onboard services", img: img4  , link :"/onboard" },
   { name: "Competence management", img: img3  , link :"/competence"},
-  { name: "Dry BMS", img: img7  , link :"/dry"},
+  { name: "SIRE 2.0", img: img7  , link :"/dry"},
   { name: "Rightship", img:img6  , link :"/right"} ,
-   { name: "Mooring management", img: img5  , link :"/mooring"},
+
     { name: "Auditing", img: img8  , link :"/audit" },
-     { name: "Decarbonisation", img: img9  , link :"/"}
+     
   ]
   return (
     <div className='  w-full font-[Parkinsans] bg-[#F2F0EA] ' >

@@ -3,14 +3,16 @@
 
     function Marquees2() {
         const data = [
-            { name: "E-learning", size: "small" },
-            { name: "Onboard services", size: "large" },
-            { name: "Competence management", size: "large" },
-            { name: "Dry BMS", size: "xlarge" },
-            { name: "Rightship", size: "large" },
-            { name: "Mooring management", size: "medium" },
-            { name: "Auditing", size: "medium" },
-            { name: "Decarbonisation", size: "xlarge" }
+            ,,, ,, , , ,, , 
+            { name: "Internal Audits", size: "small" },
+            { name: "Safety Inspections", size: "large" },
+            { name: "Technical Inspections", size: "large" },
+            { name: " Pre-Purchase Inspections", size: "xlarge" },
+            { name: "Pre-RightShip", size: "large" },
+            { name: "Pre-Sire2.0 inspection", size: "medium" },
+            { name: "Remote Nav Audits", size: "medium" },
+            { name: " Remote Engineering Audits", size: "xlarge" },
+             { name: " Conditon Surveys", size: "xlarge" }
         ];
 
         return (

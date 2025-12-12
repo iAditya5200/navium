@@ -104,7 +104,7 @@ function Home() {
 
       <hr />
       <div className='mx-auto w-[100%] tracking-widest mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
-        What we do
+      Services
       </div>
       < p className='text-center my-5'>Navium has been a prominent player in the industry since 2016, providing marine-related technical services to a global clientele. Whether you’re a Dry Fleet or Tanker Fleet operator, at Navium Marine, we tailor our solutions to your unique fleet needs. Our dedicated team of Subject Matter Experts is driven by the goal of optimizing your fleet’s performance.</p>
       <Clients />
@@ -120,6 +120,10 @@ function Home() {
       </div> */}
       {/* 
       <Stripes /> */}
+
+       <div className="mt-8 w-full flex justify-center">
+            <Button content="Know more" width="12rem" link="/services" />
+        </div>
 
       <div className='mx-auto w-[100%] text-left pl-[2vw] mt-25 font-bold text-3xl text-center text-zinc-800 hover:text-zinc-500  rounded-full'>
         Contact-us
