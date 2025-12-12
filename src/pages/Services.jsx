@@ -10,7 +10,7 @@ import img5 from '../assets/mooring.jpg'
 import img6 from '../assets/ship.jpg'
 import img7 from '../assets/dbs.jpg'
 import img8 from '../assets/audi.jpg'
-import img9 from '../assets/carbon.jpg'
+
 import Cards from '../components/Common/Cards'
 import Button from '../components/Common/Button'
 
