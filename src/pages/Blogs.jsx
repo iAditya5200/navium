@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Common/Navbar";
 import Footer from "../components/Common/Footer";
 import Button from "../components/Common/Button";
-
+import img from '/src/assets/blog1.jpg'
 // 🖼 Import your blog images
 import img1 from "/src/assets/leadership.jpg";
 import img2 from "/src/assets/audi2.jpg";
@@ -11,33 +11,22 @@ import img4 from "/src/assets/dbs.jpg";
 
 function Blogs() {
   const blogs = [
-    {
-      title: "VDR Data Analysis",
-      subtitle:
-        "Revamp Your Ship/Vessel’s Data by Onboarding VDR Data Analysis with Broadside Marine",
-      description: `In today’s constantly evolving maritime industry, the need for accurate and reliable data is more crucial than ever. Vessel operators worldwide are seeking ways to enhance the safety and efficiency of their fleets. One such method is through Voyage Data Recorder (VDR) Analysis, which plays a significant role in improving overall operations. VDR Data Analysis, also known as VDR/SVDR analysis or Remote Navigation Assessment, provides vital insights into navigational safety culture, helps pinpoint pain points, and suggests improvements.`,
-      image: img1,
-    },
-    {
-      title: "MEG4",
-      subtitle: "Enhancing Mooring Safety and Efficiency with Broadside Marine",
-      description: `In the fast-paced world of maritime operations, the safety of crew, cargo, and vessels is paramount. Every responsible ship owner, operator, or port authority seeks to optimize mooring operations while ensuring the highest standards of safety. In this pursuit, the Mooring Equipment Guidelines 4 (MEG4) developed by the Oil Companies International Marine Forum (OCIMF), emerges as a groundbreaking guidance that revolutionizes the landscape of mooring practices not only in Tanker Industry but also in Dry Industry.`,
-      image: img2,
-    },
-    {
-      title: "VDR Data Analysis",
-      subtitle:
-        "Vessel VDR Data Analysis and the triumphs of Broadside Marine",
-      description: `In the maritime industry, safety, compliance, and operational efficiency are paramount. Vessel VDRs (Voyage Data Recorders) have revolutionized the way data is collected and managed onboard ships, serving as essential tools for accident investigation, safety enhancement, and performance optimization. However, their potential goes beyond mere data storage – VDR data analysis has emerged as a game-changer, providing maritime companies with valuable insights that shape strategies, streamline operations, and save lives.`,
-      image: img3,
-    },
-    {
-      title: "CARBON - Decarbonization Platform",
-      subtitle: "Decarbonizing our Waters: CARBON By Your Side",
-      description: `The decarbonization process can be a daunting task. But exciting times lay ahead of us as we bid farewell to the complexities of EU-ETS, CII, and EEXI compliance. Broadside has come up with their latest offering, CARBON – a game-changing, class-approved Software as a Service (SaaS) solution that's reshaping the maritime decarbonization landscape.`,
-      image: img4,
-    },
-  ];
+          {
+              title: " Importance of RightShip Inspections",
+              subtitle: "Raising the Bar: Why RightShip Inspections Are Transforming Bulk Carrier Safety & Performance",
+              description: `In The global bulk carrier fleet transports the world’s most essential commodities — iron ore, coal, grains, fertilizers, bauxite, and more. Yet, behind every voyage lies a shared responsibility: ensuring these ships meet the highest standards of safety, environmental stewardship, and operational integrity.`,
+              image: img,  // optional, replace with real image path 
+              linkTO: "https://www.linkedin.com/pulse/raising-bar-why-rightship-inspections-tnjfc?trackingId=rxSLRGr44bQaXsDgJaw%2FMw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BoD73HakOTs%2B3PnM%2FJvPTFw%3D%3D"
+          },
+          {
+              title: "SIRE 2.0",
+              subtitle: "Enhancing Mooring Safety and Efficiency with Broadside Marine",
+              description: `The tanker industry is undergoing a major transformation with the rollout of SIRE 2.0 — a next-generation inspection program that puts real-time competency, human-element performance, and risk-based thinking at the centre of operational excellence. As tanker operators adapt to this new framework, the focus is shifting from paperwork to genuine readiness, awareness, and safety leadership on board.`,
+              image: 'https://media.licdn.com/dms/image/v2/D5612AQFC2cy8cnV3YA/article-cover_image-shrink_600_2000/B56ZsCsD0hGgAU-/0/1765276665847?e=1767225600&v=beta&t=jZpD7QgpQ8idYAfhYLADWGFiguMYgET6vk8ftVL5W6o' ,
+              linkTO : "https://www.linkedin.com/pulse/sire-20-redefining-safety-competence-rdl9c?trackingId=Q8uwvZcyYkAcyb%2Fue%2FM5mg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3B7%2Fm1YZTzTJmgIvRFd%2FV0bw%3D%3D"
+          },
+          
+      ];
 
   return (
     <div className="min-h-screen w-full font-[Parkinsans] bg-[#F2F0EA] overflow-x-hidden">
@@ -57,14 +46,15 @@ function Blogs() {
       {/* 🔹 Blogs List */}
       <div className="w-full flex flex-col items-center px-4 my-10 gap-8">
         {blogs.map((blog, index) => (
-          <div
-            key={index}
-            className="relative w-full md:w-[80%] lg:w-[70%] text-zinc-100 rounded-lg overflow-hidden shadow-lg group"
+          <a href={blog.linkTO} target="_blank" className="relative w-full md:w-[80%] lg:w-[70%] text-zinc-100 rounded-lg overflow-hidden shadow-lg group"
             style={{
               backgroundImage: `url(${blog.image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-            }}
+            }}>
+          <div
+            key={index}
+            
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-all duration-300"></div>
@@ -80,9 +70,10 @@ function Blogs() {
               <p className="text-sm md:text-base text-gray-200 mb-6 line-clamp-4">
                 {blog.description}
               </p>
-              <Button width="fit-content" content="Read More" />
+              {/* <Button link={blog.linkTO} width="fit-content" content="Read More" /> */}
             </div>
           </div>
+          </a>
         ))}
       </div>
        <div className='m-5'>
