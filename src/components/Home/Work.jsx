@@ -79,17 +79,18 @@
 // export default Work
 import React from 'react'
 import { motion } from "motion/react"
-import beach from '/src/assets/heroNav.mp4'
+import beach from '/src/assets/heraNaav.mp4'
 
 function Work() {
   return (
-    <div className="w-full  h-[70vw] sm:h-screen mt-10 bg-sky-950 flex justify-center items-center relative overflow-hidden">
+    <div className="w-full  h-[60vw] sm:h-[90vh] mt-10 bg-sky-950 flex justify-center items-center relative overflow-hidden">
 
       {/* 🔹 Background Video Layer */}
       <div className="absolute inset-0 z-0">
         <video
         fetchpriority="high"
          preload="auto"
+         playsInline
           className="w-full h-full object-cover"
           autoPlay
           loop

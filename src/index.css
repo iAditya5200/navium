@@ -12,3 +12,12 @@ body , html {
     width: 100%;
   
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(252, 32, 32, 0.848);
+  border-radius: 10px;
+}

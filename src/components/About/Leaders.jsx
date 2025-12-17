@@ -30,8 +30,8 @@ import Button from '../Common/Button';
 
 function Leaders() {
   const leaders = [
-    { name: 'Capt. Puneet Singh', des: 'Master Mariner', post: 'Founder at Navium', url: demoDp2 },
-    { name: 'Capt. Naveen Chhikara', des: 'Master Mariner', post: 'Co-founder at Navium', url: demoDp }
+    { name: 'Capt. Puneet Singh', des: 'Master Mariner', post: 'Co-founder at Navium', url: demoDp2 },
+    { name: 'Capt. Naveen Chhikara', des: 'Master Mariner', post: 'Founder at Navium', url: demoDp }
   ];
 
   return (
