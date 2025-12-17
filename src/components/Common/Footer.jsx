@@ -87,7 +87,7 @@ function Footer() {
         {/* Company Description */}
         <div className=" text-zinc-800 w-full text-sm text-center md:w-[20%] md:text-left md:text-[1.5vw]">
           
-          <div className="mt-4 font-bold text-zinc-500  ">
+          <div className="mt-4 text-sm font-bold whitespace-nowrap text-zinc-500  ">
             Developed by AdityaLabs
           </div>
         </div>

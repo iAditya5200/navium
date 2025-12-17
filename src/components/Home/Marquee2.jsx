@@ -5,14 +5,14 @@ function Marquee({ value, dir }) {
 
     return (
         <div className=' mt-5 w-full  h-fit-content flex '>
-    <motion.div className='flex text-zinc-900 leading-4  '
+    <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4  '
             initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
                 transition={{ ease: "linear", duration: 15, repeat: Infinity }}
                 >
 
                 {value.map((elem, index) => {
-                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[50vh] m-5  '>
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[25vh] m-5  '>
                         <p className='text-center  text-sm  md:text-2xl'>{elem.name}</p>
                         
                     </div>)
@@ -21,14 +21,14 @@ function Marquee({ value, dir }) {
 
                 }
             </motion.div>
-            <motion.div className='flex  text-zinc-900 leading-4  '
+            <motion.div className='flex bg-zinc-400 text-zinc-900 leading-4  '
             initial={{ x: dir === 'left' ? "-100%" : "0" }}
                 animate={{ x: dir === 'left' ? "0" : "-100%" }}
                 transition={{ ease: "linear", duration: 15, repeat: Infinity }}
                 >
 
                 {value.map((elem, index) => {
-                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[50vh] m-5  '>
+                    return (<div className='w-[20vw]  flex text-xl relative  group text-center font-semibold items-center justify-evenly flex h-[20vh] md:h-[25vh] m-5  '>
                         <p className='text-center  text-sm lg:text-2xl'>{elem.name}</p>
                         
                     </div>)

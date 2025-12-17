@@ -4,7 +4,7 @@ import Footer from '../components/Common/Footer'
 import HeadingImg from '../components/Common/HeadingImg'
 import Video from '../components/Common/Video'
 import img from '/src/assets/learn.jpg'
-import vdo from '/src/assets/Ship3.mp4'
+//import vdo from '/src/assets/Ship3.mp4'
 import SliderComp from '../components/Common/SliderComp'
 
 

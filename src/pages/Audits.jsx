@@ -73,7 +73,7 @@ const Dry = () => {
                     alt="Audit overview"
                 />
                 <h1 className="mt-5 md:mt-0 md:w-1/2 text-justify leading-relaxed text-gray-700">
-                    Broadside recognizes the unwavering dedication required for safety,
+                    We recognizes the unwavering dedication required for safety,
                     operational efficiency, and regulatory adherence within the maritime
                     realm. Our comprehensive range of vessel audit and inspection services
                     can be tailored to your operational demands, ensuring your vessels

@@ -79,7 +79,7 @@
 // export default Work
 import React from 'react'
 import { motion } from "motion/react"
-import beach from '/src/assets/Bg-2.mp4'
+import beach from '/src/assets/heroNav.mp4'
 
 function Work() {
   return (

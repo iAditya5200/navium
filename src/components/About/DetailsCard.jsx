@@ -48,7 +48,7 @@
 // //     </div>
 
 import React from 'react'
-import beach from '/src/assets/about.mp4'
+import beach from '/src/assets/BgNAV.mp4'
 import { motion } from 'motion/react'
 
 function DetailsCard() {

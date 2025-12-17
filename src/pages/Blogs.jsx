@@ -20,7 +20,7 @@ function Blogs() {
           },
           {
               title: "SIRE 2.0",
-              subtitle: "Enhancing Mooring Safety and Efficiency with Broadside Marine",
+              subtitle: "Enhancing Mooring Safety and Efficiency with We Marine",
               description: `The tanker industry is undergoing a major transformation with the rollout of SIRE 2.0 — a next-generation inspection program that puts real-time competency, human-element performance, and risk-based thinking at the centre of operational excellence. As tanker operators adapt to this new framework, the focus is shifting from paperwork to genuine readiness, awareness, and safety leadership on board.`,
               image: 'https://media.licdn.com/dms/image/v2/D5612AQFC2cy8cnV3YA/article-cover_image-shrink_600_2000/B56ZsCsD0hGgAU-/0/1765276665847?e=1767225600&v=beta&t=jZpD7QgpQ8idYAfhYLADWGFiguMYgET6vk8ftVL5W6o' ,
               linkTO : "https://www.linkedin.com/pulse/sire-20-redefining-safety-competence-rdl9c?trackingId=Q8uwvZcyYkAcyb%2Fue%2FM5mg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3B7%2Fm1YZTzTJmgIvRFd%2FV0bw%3D%3D"
